@@ -55,6 +55,22 @@ navBar[3].textContent = siteContent['nav']['nav-item-4']
 navBar[4].textContent = siteContent['nav']['nav-item-5']
 navBar[5].textContent = siteContent['nav']['nav-item-6']
 
+navBar.forEach(link => {
+  link.style.color = 'green'
+})
+
+const nav = document.querySelector('nav')
+let signUp = document.createElement('a')
+signUp.textContent = 'Sign Up'
+signUp.href = '#'
+signUp.style.color = 'green'
+nav.prepend(signUp)
+
+let blogPost = document.createElement('a')
+blogPost.textContent = 'Blog'
+blogPost.href = '#'
+blogPost.style.color = 'green'
+nav.appendChild(blogPost)
 
 let bigHeading = document.querySelector('h1')
 bigHeading.textContent = siteContent['cta']['h1']
