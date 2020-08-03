@@ -56,3 +56,12 @@ navBar[4].textContent = siteContent['nav']['nav-item-5']
 navBar[5].textContent = siteContent['nav']['nav-item-6']
 
 
+let bigHeading = document.querySelector('h1')
+bigHeading.textContent = siteContent['cta']['h1']
+
+let topButton = document.querySelector('button')
+topButton.textContent = siteContent['cta']['button']
+
+let topContent = document.querySelectorAll('.text-content h4')
+topContent[0].textContent = siteContent['main-content']['features-h4']
+topContent[1].textContent = siteContent['main-content']['about-h4']
