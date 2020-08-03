@@ -65,3 +65,13 @@ topButton.textContent = siteContent['cta']['button']
 let topContent = document.querySelectorAll('.text-content h4')
 topContent[0].textContent = siteContent['main-content']['features-h4']
 topContent[1].textContent = siteContent['main-content']['about-h4']
+topContent[2].textContent = siteContent['main-content']['services-h4']
+topContent[3].textContent = siteContent['main-content']['product-h4']
+topContent[4].textContent = siteContent['main-content']['vision-h4']
+
+let topText = document.querySelectorAll('.text-content p')
+topText[0].textContent = siteContent['main-content']['features-content']
+topText[1].textContent = siteContent['main-content']['about-content']
+topText[2].textContent = siteContent['main-content']['services-content']
+topText[3].textContent = siteContent['main-content']['product-content']
+topText[4].textContent = siteContent['main-content']['vision-content']
