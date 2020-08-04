@@ -40,3 +40,65 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let codeImg = document.getElementById('cta-img');
+codeImg.setAttribute('src', siteContent['cta']['img-src'])
+
+let middleImage = document.getElementById('middle-img');
+middleImage.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+let navBar = document.querySelectorAll('nav a')
+navBar[0].textContent = siteContent['nav']['nav-item-1']
+navBar[1].textContent = siteContent['nav']['nav-item-2']
+navBar[2].textContent = siteContent['nav']['nav-item-3']
+navBar[3].textContent = siteContent['nav']['nav-item-4']
+navBar[4].textContent = siteContent['nav']['nav-item-5']
+navBar[5].textContent = siteContent['nav']['nav-item-6']
+
+navBar.forEach(link => {
+  link.style.color = 'green'
+})
+
+const nav = document.querySelector('nav')
+let signUp = document.createElement('a')
+signUp.textContent = 'Sign Up'
+signUp.href = '#'
+signUp.style.color = 'green'
+nav.prepend(signUp)
+
+let blogPost = document.createElement('a')
+blogPost.textContent = 'Blog'
+blogPost.href = '#'
+blogPost.style.color = 'green'
+nav.appendChild(blogPost)
+
+let bigHeading = document.querySelector('h1')
+bigHeading.textContent = siteContent['cta']['h1']
+
+let topButton = document.querySelector('button')
+topButton.textContent = siteContent['cta']['button']
+
+let topContent = document.querySelectorAll('.text-content h4')
+topContent[0].textContent = siteContent['main-content']['features-h4']
+topContent[1].textContent = siteContent['main-content']['about-h4']
+topContent[2].textContent = siteContent['main-content']['services-h4']
+topContent[3].textContent = siteContent['main-content']['product-h4']
+topContent[4].textContent = siteContent['main-content']['vision-h4']
+
+let topText = document.querySelectorAll('.text-content p')
+topText[0].textContent = siteContent['main-content']['features-content']
+topText[1].textContent = siteContent['main-content']['about-content']
+topText[2].textContent = siteContent['main-content']['services-content']
+topText[3].textContent = siteContent['main-content']['product-content']
+topText[4].textContent = siteContent['main-content']['vision-content']
+
+let contactHeader = document.querySelector('.contact h4')
+contactHeader.textContent = siteContent['contact']['contact-h4']
+
+let contactInfo = document.querySelectorAll('.contact p')
+contactInfo[0].textContent = siteContent['contact']['address']
+contactInfo[1].textContent = siteContent['contact']['phone']
+contactInfo[2].textContent = siteContent['contact']['email']
+
+let copyRight = document.querySelector('footer p')
+copyRight.textContent = siteContent['footer']['copyright']
